@@ -5,10 +5,10 @@ A user can purchase the so-called credits using his credit card and then use the
 
 It has the front-end and back-end. The front-end is implemented using React and Redux. THe back-end is implemented using Express and Node.js.
 
-This application also uses some 3rd-party libraries and tools:
-1, Stripe to do billing
-2, SendGrid to do the email survey
-3, MongoDB to record
-4, Google OAuth to do the authentication
+This application also uses some 3rd-party libraries and tools:<br>
+1, Stripe to do billing<br>
+2, SendGrid to do the email survey<br>
+3, MongoDB to record<br>
+4, Google OAuth to do the authentication<br>
 
 A web application can be found at https://udemy-react-email-survey-app.herokuapp.com/
