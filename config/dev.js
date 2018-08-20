@@ -1,10 +1,11 @@
 module.exports = {
-  googleClientID: 'xxxxxxxx.apps.googleusercontent.com',
-  googleClientSecret: 'xxxxxxxxxxxxxxxxxxxxxxxxx',
+  googleClientID: 'xxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com',
+  googleClientSecret: 'yyyyyyyyyyyyyyyyyyyyyyyyyyyyy',
   mongoDbUri: 'mongodb://localhost:27017/udemy-react-email-survey-app',
-  cookieKey1: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-  cookieKey2: 'yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy',
-  stripePublicKey: 'pk_test_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-  stripeSecretKey: 'sk_test_yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy',
-  sendgridKey: 'SG.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+  cookieKey1: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx',
+  cookieKey2: 'YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY',
+  stripePublicKey: 'pk_test_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxx',
+  stripeSecretKey: 'sk_test_YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY',
+  sendgridKey: 'SG.ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ',
+  redirectDomain: 'http://localhost:3000',
 };

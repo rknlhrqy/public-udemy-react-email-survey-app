@@ -23,6 +23,7 @@ mongoose.connect(keys.mongoDbUri, { useNewUrlParser: true });
 
 require('./routes/auth_routes')(app);
 require('./routes/billing_routes')(app);
+require('./routes/survey_routes')(app);
 
 if (process.env.NODE_ENV === 'production') {
   // Express Framework will serve up production assets
