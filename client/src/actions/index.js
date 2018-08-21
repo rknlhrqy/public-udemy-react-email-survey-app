@@ -34,3 +34,19 @@ export const handleToken = (token) =>
       });
     }
   };
+
+export const submitSurvey = (values, history) =>
+  async (dispatch) => {
+    try {
+      const response = await axios.post('/api/surveys', values);
+      if (response.status >= 200 && response.status < 300) {
+        history.push('/surveys');
+        dispatch({
+          type: FETCH_USER,
+          payload: response.data,
+        });
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };

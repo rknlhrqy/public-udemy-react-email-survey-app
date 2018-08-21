@@ -36,7 +36,7 @@ module.exports = (app) => {
       response.send(user);
     } else {
       console.log('Survey Email Request not Working');
-      response.status(statusCode).send(request.user);
+      response.status(statusCode).send();
     }
   });
 };
