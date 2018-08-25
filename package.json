@@ -13,9 +13,10 @@
     "server": "nodemon index.js",
     "server-debug": "nodemon --inspect-brk index.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "dev-debug": "concurrently \"npm run server-debug\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && del-cli client/node_modules"
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run webhook\"",
+    "dev-debug": "concurrently \"npm run server-debug\" \"npm run client\" \"npm run webhook\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && del-cli client/node_modules",
+    "webhook": "ssh -o ServerAliveInterval=60 -R rknlhrqy:80:localhost:5000 serveo.net"
   },
   "author": "Kening Ren",
   "license": "ISC",
@@ -25,9 +26,12 @@
     "cookie-session": "^2.0.0-beta.3",
     "del-cli": "^1.1.0",
     "express": "^4.16.3",
+    "localtunnel": "^1.9.0",
+    "lodash": "^4.17.10",
     "mongoose": "^5.2.7",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
+    "path-parser": "^4.2.0",
     "sendgrid": "^5.2.3",
     "stripe": "^6.7.0"
   },
